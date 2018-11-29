@@ -10,16 +10,20 @@ public class FaceDrawing {
     {
         this.faceFeatures = faceFeatures;
     }
-    void edit(String replace, int row, int column)
+    void edit(String replace, int column, int row)
     {
-        this.replace = replace;
-        this.row = row;
-        this.column = column;
-
+     this.faceFeatures[this.row][this.column] = this.replace;
     }
     void fill(String str)
     {
-        this.str = str;
+        for(int i = 0; i < faceFeatures.length; i++)
+        {
+            for(int j = 0; j < faceFeatures[i].length; j++)
+            {
+                faceFeatures[i][j] = str;
+            }
+            System.out.println();
+        }
 
     }
     String toString()
