@@ -1,18 +1,14 @@
 package com.company;
 
 public class FaceDrawing {
-    private String replace;
-    private int row;
-    private int column;
-    private String str;
     private String[][] faceFeatures;
     public FaceDrawing(String[][] faceFeatures)
     {
         this.faceFeatures = faceFeatures;
     }
-    void edit(String replace, int column, int row)
+    void edit(String replace, int row, int column)
     {
-     this.faceFeatures[this.row][this.column] = this.replace;
+     this.faceFeatures[row][column] = replace;
     }
     void fill(String str)
     {
@@ -26,8 +22,5 @@ public class FaceDrawing {
         }
 
     }
-    String toString()
-    {
 
-    }
 }
