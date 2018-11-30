@@ -8,7 +8,8 @@ public class FaceDrawing {
     }
     void edit(String replace, int row, int column)
     {
-     this.faceFeatures[row][column] = replace;
+        faceFeatures[row][column] = replace;
+        System.out.print(faceFeatures[row][column]);
     }
     void fill(String str)
     {
@@ -17,6 +18,7 @@ public class FaceDrawing {
             for(int j = 0; j < faceFeatures[i].length; j++)
             {
                 faceFeatures[i][j] = str;
+                System.out.print(faceFeatures[i][j]);
             }
             System.out.println();
         }
