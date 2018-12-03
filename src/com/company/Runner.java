@@ -10,6 +10,10 @@ public class Runner {
         face1.fill("X");
         face1.edit(" ",0, 0);
         face1.edit(" ",4,7);
+        face1.edit(" ",0,7);
+        face1.edit(" ",4,0);
+
+        face1.edit("0",1,2);
 
     }
 }

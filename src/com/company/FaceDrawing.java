@@ -9,7 +9,6 @@ public class FaceDrawing {
     void edit(String replace, int row, int column)
     {
         faceFeatures[row][column] = replace;
-        System.out.print(faceFeatures[row][column]);
     }
     void fill(String str)
     {
@@ -18,11 +17,21 @@ public class FaceDrawing {
             for(int j = 0; j < faceFeatures[i].length; j++)
             {
                 faceFeatures[i][j] = str;
-                System.out.print(faceFeatures[i][j]);
             }
             System.out.println();
         }
-
     }
-
+    public String toString()
+    {
+        String face = "";
+        for(int x = 0; x < faceFeatures.length; x++)
+        {
+            for(int y = 0; y < faceFeatures[x].length; y++)
+            {
+                face = face + faceFeatures[x][y];
+            }
+            System.out.println();
+        }
+        return face;
+    }
 }
