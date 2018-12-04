@@ -18,7 +18,6 @@ public class FaceDrawing {
             {
                 faceFeatures[i][j] = str;
             }
-            System.out.println();
         }
     }
     public String toString()
@@ -30,7 +29,7 @@ public class FaceDrawing {
             {
                 face = face + faceFeatures[x][y];
             }
-            System.out.println();
+            face += "\n";
         }
         return face;
     }
